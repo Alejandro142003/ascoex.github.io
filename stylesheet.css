@@ -333,3 +333,10 @@ input:checked + .slider:before {
         height: 100%;
     }
 }
+
+/*Tamaño para pantallas xs del footer*/
+@media only screen and (min-width: 400px) {
+    #salto{
+        display: none;
+    }
+}
