@@ -1,0 +1,335 @@
+/* Colores del root */
+:root{
+    --color-fondo: #ededed;
+    --color-fondo-navbar: #A4D8B9;
+    --color-link-navbar: black;
+    --color-link-resaltado: #00b315;
+    --color-titulo-seccion: #7f7f7f;
+    --color-texto-tarjeta: #030303;
+    --color-fondo-tarjeta: white;
+    --color-texto-footer: black;
+    --color-separador: #babbbc;
+}
+
+[tema='dark']{
+    --color-fondo: #262626;
+    --color-fondo-navbar: #A4D8B9;
+    --color-link-navbar: black;
+    --color-link-resaltado: #00b315;
+    --color-titulo-seccion: #b6b6b6;
+    --color-texto-tarjeta: white;
+    --color-fondo-tarjeta: #535353;
+    --color-texto-footer: white;
+    --color-separador: #ffffff;
+}
+
+[tema='light']{
+    --color-fondo: #ededed;
+    --color-fondo-navbar: #A4D8B9;
+    --color-link-navbar: black;
+    --color-link-resaltado: #00b315;
+    --color-titulo-seccion: #7f7f7f;
+    --color-texto-tarjeta: #030303;
+    --color-fondo-tarjeta: white;
+    --color-texto-footer: black;
+    --color-separador: #babbbc;
+}
+
+/* Color para el texto en tema oscuro */
+.color-texto-oscuro{
+    color: var(--color-texto-tarjeta);
+}
+
+
+/* Color links del footer */
+.links-footer a{
+    color: var(--color-texto-footer);
+}
+
+/* Color del texto del footer */
+.color-texto-footer{
+    color: var(--color-texto-footer);
+}
+
+/* Color del separador */
+hr{
+    color: var(--color-separador);
+}
+
+/* Fondo de la barra de navegación y de la página */
+.navbar{
+    background-color: var(--color-fondo-navbar);
+}
+body{
+    background-color: var(--color-fondo);
+}
+
+/* Id para el tamaño del nogo de la barra de navegación */
+#logonavbar{
+    width: 222px;
+}
+
+/* Eliminación de los bordes de la clase container-fluid de Bootstrap */
+.container-fluid{
+    padding: 0px;
+}
+
+/* Colores de los link de la barra de navegación */
+.nav-link{
+    color: black;
+}
+.nav-link:hover{
+    color: var(--color-link-resaltado);
+}
+.active {
+    color: var(--color-link-resaltado) !important;
+}
+
+/* Tamaño de tarjetas de imágen con logo */
+#logo {
+    width: 72%;
+    height: 30rem;
+}
+#imagen-logo{
+    height: 30rem;
+}
+
+/* Centrado del elemento de separación ya que no se centraba automáticamente */
+hr{
+    margin-left: 9%;
+}
+
+/* Fondo del color de la tarjeta */
+.card{
+    background-color: var(--color-fondo-tarjeta);
+}
+
+/* Tamaño de tarjetas */
+.imagen-size{
+    /* Tamaño de la imagen de la tarjeta con imágen */
+    width: 51%;
+    height: 100%;
+    position: absolute;
+    top: -25px;
+}
+.card-h1 {
+    /* Tamaño del título de las tarjetas */
+    font-size: 5em;
+    color: var(--color-texto-tarjeta);
+    text-align: justify;
+}
+.card-h3 {
+    /* Tamaño del título de la sección */
+    font-size: 22px;
+    color: var(--color-titulo-seccion);
+}
+.card-p {
+    /* Tamaño del texto de la tarjeta */
+    font-size: 40px;
+    color: var(--color-texto-tarjeta);
+    text-align: justify;
+}
+
+/* Oculta objetos */
+.pequeño{
+    /* Intención de ocultar objetos pequeños de hay su nombre */
+    display: none;
+}
+
+/* Botón desplazable del modo oscuro */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #B0B0B0;
+  border: 1px solid #B0B0B0;
+  transition: .4s;
+  border-radius: 32px;
+  outline: none;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  outline: 2px solid #B0B0B0;
+  left: -1px;
+  bottom: -1px;
+  background-color: #fff;
+  transition: transform .25s ease-in-out 0s;
+}
+
+/* Boton desplazable activado */
+input:checked + .slider {
+  background-color: #222222;
+}
+
+input:checked + .slider .slider-icon {
+  opacity: 1;
+  right: 20%;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.5em);
+  outline-color: #181818;
+}
+
+/* ID del mapa leatflet para añadirle un tamaño a este y que así sea visible */
+#map {
+    height: 25rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+/* Tamaño de tarjetas y logos para pantallas de entre 1440px y 2200px ya que quedaban muy estiradas */
+@media only screen and (max-width: 2200px) {
+    .card-h1 {
+        /* Tamaño del título de las tarjetas */
+        font-size: 3.5rem;
+        color: var(--color-texto-tarjeta);
+        text-align: justify;
+    }
+    .card-h3 {
+        /* Tamaño del título de la sección */
+        font-size: 18px;
+        color: var(--color-titulo-seccion);
+    }
+    .card-p {
+        /* Tamaño del texto de la tarjeta */
+        font-size: 35px;
+        color: var(--color-texto-tarjeta);
+        text-align: justify;
+    }
+    /* Tamaño de tarjetas de imágen con logo */
+    #logo {
+    width: 72%;
+    height: 20rem;
+    }
+    #imagen-logo{
+    height: 20rem;
+    }
+}
+
+/* Tamaño de tarjetas y logos para pantallas de entre 1200px y 1440px */
+@media only screen and (max-width: 1440px) {
+    .card-h1 {
+        /* Tamaño del título de las tarjetas */
+        font-size: 2.5rem;
+        color: var(--color-texto-tarjeta);
+        text-align: justify;
+    }
+    .card-h3 {
+        /* Tamaño del título de la sección */
+        font-size: 18px;
+        color: --color-titulo-seccion;
+    }
+    .card-p {
+        /* Tamaño del texto de la tarjeta */
+        font-size: 30px;
+        color: var(--color-texto-tarjeta);
+        text-align: justify;
+    }
+    /* Tamaño de tarjetas de imágen con logo */
+    #logo {
+    width: 72%;
+    height: 20rem;
+    }
+    #imagen-logo{
+    height: 20rem;
+    }
+}
+
+/* Tamaño de tarjetas lg */
+@media only screen and (max-width: 1200px) {
+    .card-h1 {
+        /* Tamaño del título de las tarjetas */
+        font-size: 30px;
+        color: var(--color-texto-tarjeta);
+        text-align: justify;
+    }
+    .card-h3 {
+        /* Tamaño del título de la sección */
+        font-size: 18px;
+        color: --color-titulo-seccion;
+    }
+    .card-p {
+        /* Tamaño del texto de la tarjeta */
+        font-size: 20px;
+        color: var(--color-texto-tarjeta);
+        text-align: justify;
+    }
+    /* Tamaño de tarjetas de imágen con logo */
+    #imagen-logo{
+    height: 75%;
+    }
+    #logo {
+    width: 72%;
+    height: 75%;
+    }
+}
+
+/* Tamaño de tarjetas md */
+@media only screen and (max-width: 992px) {
+    .card-h1 {
+        /* Tamaño del título de las tarjetas */
+        font-size: 25px;
+        color: var(--color-texto-tarjeta);
+        text-align: justify;
+    }
+    .card-h3 {
+        /* Tamaño del título de la sección */
+        font-size: 18px;
+        color: var(--color-titulo-seccion);
+    }
+    .card-p {
+        /* Tamaño del texto de la tarjeta */
+        font-size: 17px;
+        color: var(--color-texto-tarjeta);
+        text-align: justify;
+    }
+}
+
+/* Tamaño de tarjetas para dispositivos pequeños */
+@media only screen and (max-width: 768px) {
+    .card-h1 {
+        /* Tamaño del título de las tarjetas */
+        font-size: 25px;
+        color: var(--color-texto-tarjeta);
+        text-align: justify;
+    }
+    .card-h3 {
+        /* Tamaño del título de la sección */
+        font-size: 18px;
+        color: var(--color-titulo-seccion);
+    }
+    .card-p {
+        /* Tamaño del texto de la tarjeta */
+        font-size: 17px;
+        color: var(--color-texto-tarjeta);
+        text-align: justify;
+    }
+    .imagen-size{
+        /* Tamaño de las imagenes */
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ASCOEX</title>
+        <!-- Libreria online de Bootstrap v5.3 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <!-- Hoja de estiolos propia -->
+        <link href="stylesheet.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Contenedor que engloba toda la página para que sea responsiva usando bootstrap -->
+        <div class="container-fluid">
+            <!-- Cabecera con formato sticky para la página -->
+            <nav class="navbar navbar-expand-lg cabecera border-bottom padding-start border-dark border-3 sticky-top p-lg-0 h-auto pe-3 pt-0 pb-0">
+                <!-- Logo de la organización -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="fwddatosascoex_paginaweb/logo ascoex.png" id="logonavbar" alt="Logo ASCOEX">
+                </a>
+                <!-- Menú desplegable para dispositivos pequeños -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Barra de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav flex-grow-1 fs-3 ps-3 ps-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Paginas/asociaciones.html">Asociaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Paginas/razas.html">Razas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Paginas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <!-- Botones de redireccionamiento a login, sing up y activación de modo oscuro -->
+                    <form class="container-fluid justify-content-lg-end d-flex pe-3 pb-2 p-lg-0 pe-lg-3 ps-3 mt-1 mt-lg-0">
+                        <!-- Botón de activación del modo oscuro -->
+                        <label class="switch me-3 mt-1" id="switch">
+                            <input type="checkbox" id="checkbox">
+                            <span class="slider">
+                                <svg class="slider-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true" role="presentation">
+                                    <path fill="none" d="m4 16.5 8 8 16-16"></path>
+                                </svg>
+                            </span>
+                        </label>
+                        <!-- Botones Log In y Sing Up -->
+                        <a class="btn btn-outline-dark me-2" href="Paginas/login.html" role="button">Log in</a>
+                        <a class="btn btn-success" href="#" role="button">Sign up</a>
+                    </form>
+                </div>
+            </nav>
+            <!-- Cuerpo de la página -->
+            <div class="d-flex flex-column align-content-center flex-wrap">
+                <!-- Titulo de la sección de la página -->
+                <h3 class="card-h3 ms-md-4 mt-4 mt-lg-5 mb-1 align-self-center align-self-md-start">PRESENTACIÓN</h3>
+                <!-- Tarjeta de sección -->
+                <div class="card col-10 rounded-4 mb-3 mb-md-5 border-0 shadow">
+                    <div class="row g-0">
+                        <!-- Primara parte de la tarjeta donde esta el título principal y el texto -->
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h1 class="card-h1 ps-0 ps-md-3 ps-lg-4 pb-lg-2">ASCOEX, la  Asociación de Asociaciones para el Control Lechero Oficial  en Extremadura</h1>
+                                <p class="card-p ps-0 ps-md-3 ps-lg-4 pb-lg-2">Donde se regula el control oficial del rendimiento lechero para la evaluación genética en las especies bovina, ovina y caprina en la Comunidad Autónoma de Extremadura</p>
+                            </div>
+                        </div>
+                        <!-- Segunda parte de la tarjeta donde esta la imagen -->
+                        <div class="col-md-6">
+                            <img src="ImagenesFicticias/cabrita.jpg" class="img-fluid rounded-4 imagen-size ms-md-4 d-none d-md-block" alt="Imagen de una cabra">
+                        </div>
+                    </div>
+                </div>
+                <!-- Imagen de la segunda parte de la tarjeta para dispositivos pequeños -->
+                <div class="card rounded-4 col-8 mb-3 mb-md-5 align-self-center border-0 shadow mt-3 d-md-none">
+                    <img src="ImagenesFicticias/cabrita.jpg" class="rounded-4" alt="Logo de ASCOEX" id="imagen-logo">
+                </div>
+                <!-- Tarjeta con imagen en este caso de logo -->
+                <div class="card rounded-4 col-8  mb-3 mb-md-5 align-self-center border-0 shadow mt-3" id="logo">
+                    <img src="fwddatosascoex_paginaweb/logo ascoex web.jpg" class="rounded-4" alt="Logo de ASCOEX" id="imagen-logo">
+                </div>
+                <!-- Titulo de la sección de la página -->
+                <h3 class="card-h3 ms-md-4 mt-4 mt-lg-5 mb-1 align-self-center align-self-md-start">¿QUE HACEMOS?</h3>
+                <!-- Tarjeta de sección -->
+                <div class="card col-10 rounded-4 mb-3 mb-md-5 border-0 shadow">
+                    <div class="row g-0">
+                        <!-- Primara parte de la tarjeta donde esta el título principal y el texto -->
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h1 class="card-h1 ps-0 ps-md-3 ps-lg-4 pb-lg-2">Ayuda y colaboración con las Asociones de Razas Puras</h1>
+                                <p class="card-p ps-0 ps-md-3 ps-lg-4 pb-lg-2">Nos encargamos de supervisar y organizar los controles lecheros mensuales, asegurando que se cumplan lo parámetros exigibles en las  certificaciones de control lechero oficial, colaborando en la mejora genética de las ganaderías y razas participantes. Además actuamos como interlocutor entre los ganaderos y la administración.</p>
+                            </div>
+                        </div>
+                        <!-- Segunda parte de la tarjeta donde esta la imagen -->
+                        <div class="col-md-6">
+                            <img src="ImagenesFicticias/laboratorio.jpg" class="img-fluid rounded-4 imagen-size ms-md-4 d-none d-md-block" alt="Imagen de una cabra">
+                        </div>
+                    </div>
+                </div>
+                <!-- Imagen de la segunda parte de la tarjeta para dispositivos pequeños -->
+                <div class="card rounded-4 col-8 mb-3 mb-md-5 align-self-center border-0 shadow mt-3 d-md-none" id="logo">
+                    <img src="ImagenesFicticias/laboratorio.jpg" class="rounded-4" alt="Logo de ASCOEX" id="imagen-logo">
+                </div>
+            </div>
+            <!-- Separador para el pie de página -->
+            <hr class="col-10">
+            <!-- Elemento del pie de página para dispositivos con pantallas pequeñas -->
+            <div class="container d-flex justify-content-evenly d-md-none m-0 w-100 align-items-baseline">
+                <h2>ASCOEX</h2>
+                <P>2023© ASCOEX All rights reserved.</P>
+            </div>
+            <!-- Pie de página -->
+            <footer class="d-flex pb-3 justify-content-evenly col-10 color-texto-footer">
+                <!-- Primera columna del pie de página -->
+                <div class="col-3 d-none d-md-block" style="margin-left: 20%;">
+                    <h2>ASCOEX</h2>
+                    <P>2023© ASCOEX<br>
+                    All rights reserved.</P>
+                </div>
+                <!-- Segunda columna del pie de página -->
+                <div class="col-3 links-footer">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Paginas/asociaciones.html">Asociaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Paginas/razas.html">Razas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Noticias</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Tercera columna del pie de página -->
+                <div class="col-3 links-footer">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Paginas/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Instagram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Facebook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Cuarta columna del pie de página -->
+                <div class="col-3 links-footer">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Term Of Service</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+            <!-- Script para el modo oscuro --> 
+            <script>
+                /* Creo la constante tema y le especifico que objeto podra cambiar esta constante */
+                const tema = document.querySelector('#switch input[type="checkbox"]');
+                /* Creo la funcioón cambiar*/
+                function cambiar(ev){
+                    /* Compruebo si esta activado para elegir un tema u otro */
+                    if(ev.target.checked){
+                        document.documentElement.setAttribute('tema', 'dark'); 
+                    } else {
+                        document.documentElement.setAttribute('tema', 'light');
+                    }
+                }
+                /* Añado el evento tema para cambiar al modo oscuro o claro cuando ocurra */
+                tema.addEventListener('change', cambiar);
+            </script>
+        </div>
+    </body>
+</html>
